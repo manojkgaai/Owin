@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "tkms-webpart-client-side-solution",
+    "id": "b9d7f0e4-3ed2-4af3-8f59-d260c525fc49",
+    "version": "1.0.0.4",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.23.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "tkms-webpart description"
+      },
+      "longDescription": {
+        "default": "tkms-webpart description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "tkms-webpart Feature",
+        "description": "The feature that activates elements of the tkms-webpart solution.",
+        "id": "ad088cb3-4ac0-410c-890c-b0b8ccac6057",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/tkms-webpart.sppkg"
+  }
+}

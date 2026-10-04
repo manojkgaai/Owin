@@ -1,0 +1,109 @@
+.tkmsWebpart {
+  overflow: hidden;
+  padding: 1em;
+  color: "[theme:bodyText, default: #323130]";
+  color: var(--bodyText);
+  display: flex;
+  justify-content: center;
+}
+
+.welcome {
+  text-align: center;
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.links {
+  a {
+    text-decoration: none;
+    color: "[theme:link, default:#03787c]";
+    color: var(--link); // note: CSS Custom Properties support is limited to modern browsers only
+
+    &:hover {
+      text-decoration: underline;
+      color: "[theme:linkHovered, default: #014446]";
+      color: var(--linkHovered); // note: CSS Custom Properties support is limited to modern browsers only
+    }
+  }
+}
+
+.detailsList {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  border: 2px solid;
+  border-image: linear-gradient(90deg, #bb181d 0%, #003767 100%) 1;
+  overflow: hidden;
+
+  :global {
+    .ms-DetailsHeader {
+      background: linear-gradient(90deg, #bb181d 0%, #003767 100%);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      padding-top: 0;
+    }
+
+    .ms-DetailsHeader-cell {
+      background: transparent;
+      color: #ffffff;
+      font-weight: 600;
+      padding-top: 0;
+      padding-bottom: 0;
+      min-height: 32px;
+    }
+
+    .ms-DetailsHeader-cellTitle {
+      color: #ffffff;
+      padding-top: 0;
+    }
+
+    .ms-DetailsHeader-cell:hover {
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .ms-DetailsRow-cell {
+      color: #000000;
+    }
+
+    .ms-DetailsRow-cell > span,
+    .ms-DetailsRow-cell > div {
+      color: #000000;
+    }
+  }
+}
+
+.panelPrimaryButton {
+  background: linear-gradient(90deg, #bb181d 0%, #003767 100%) !important;
+  border: none !important;
+  width: 150px !important;
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+
+  :global(.ms-Button-label),
+  :global(.ms-Button-icon) {
+    color: #ffffff !important;
+  }
+
+  &:hover {
+    background: linear-gradient(90deg, #a31519 0%, #002e57 100%) !important;
+    border: none !important;
+  }
+
+  &:active {
+    background: linear-gradient(90deg, #8f1216 0%, #002643 100%) !important;
+    border: none !important;
+  }
+
+  &:global(.is-disabled),
+  &:disabled {
+    background: #f3f2f1 !important;
+    border: 1px solid #edebe9 !important;
+  }
+
+  &:global(.is-disabled) :global(.ms-Button-label),
+  &:global(.is-disabled) :global(.ms-Button-icon),
+  &:disabled :global(.ms-Button-label),
+  &:disabled :global(.ms-Button-icon) {
+    color: #a19f9d !important;
+  }
+}

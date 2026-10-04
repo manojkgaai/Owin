@@ -1,0 +1,19 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "useGulp": false,
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "22.23.2",
+    "sdksVersions": {},
+    "version": "1.23.2",
+    "libraryName": "tkms-webpart",
+    "libraryId": "b9d7f0e4-3ed2-4af3-8f59-d260c525fc49",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "tkms-webpart",
+    "solutionShortDescription": "tkms-webpart description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}
